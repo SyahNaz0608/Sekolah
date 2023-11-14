@@ -1,1 +1,43 @@
+<?php
+// mengecek nilai siswa
+function penghitung_nilai_kampus($nilai) 
+{
+    if ($nilai >= 81 && $nilai <= 100) {
+        echo "nilai anda $nilai, nilai huruf anda A, dan IPK anda 4";
+    } elseif ($nilai >= 78 && $nilai < 81) {
+        echo "nilai anda $nilai, nilai huruf anda A-, dan IPK anda 3.7";
+    } elseif ($nilai >= 75 && $nilai < 78) {
+        echo "nilai anda $nilai, nilai huruf anda B+, dan IPK anda 3.3";
+    } elseif ($nilai >= 70 && $nilai < 75) {
+        echo "nilai anda $nilai, nilai huruf anda B, dan IPK anda 3";
+    } elseif ($nilai >= 65 && $nilai < 70) {
+        echo "nilai anda $nilai, nilai huruf anda B-, dan IPK anda 2.7";
+    } elseif ($nilai >= 60 && $nilai < 65) {
+        echo "nilai anda $nilai, nilai huruf anda C+, dan IPK anda 2.3";
+    } elseif ($nilai >= 55 && $nilai < 60) {
+        echo "nilai anda $nilai, nilai huruf anda C, dan IPK anda 2";
+    } elseif ($nilai >= 40 && $nilai < 55) {
+        echo "nilai anda $nilai, nilai huruf anda D, dan IPK anda 1";
+    } elseif ($nilai >= 0 && $nilai < 40) {
+        echo "nilai anda $nilai, nilai huruf anda E, dan IPK anda 0";
+    } else {
+        echo "tidak ada ketentuan nilai seperti ini $nilai, segera hubungi guru anda yaa";
+    }
+}
 
+echo "1. Egi ";
+echo penghitung_nilai_kampus(78);
+echo "<br>";
+echo "2. rafi ";
+echo penghitung_nilai_kampus(67.99);
+echo "<br>";
+echo "3. Syah ";
+echo penghitung_nilai_kampus(89.50);
+echo "<br>";
+echo "4. Kevin ";
+echo penghitung_nilai_kampus(150);
+echo "<br>";
+echo "5. Novan ";
+echo penghitung_nilai_kampus(-5);
+echo "<br>";
+// sekian dari saya
